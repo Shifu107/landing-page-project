@@ -1,0 +1,305 @@
+/* Reset or Normalize CSS */
+/* Add your reset or normalize CSS here */
+
+/* Reset CSS */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Margin and Padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+blockquote,
+figure,
+figcaption,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Typography */
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/* Remove list styles */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Forms */
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+input,
+button,
+textarea {
+    margin: 0;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Remove hyperlink text decoration */
+a {
+    text-decoration: none;
+}
+
+
+/* Global Styles */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    background-color: #1F2937;
+    color: white;
+}
+
+.logo {
+    max-width: 50px; /* Adjust according to your logo size */
+    margin-left: 200px;
+}
+
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 200px;
+}
+
+.links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.links li:last-child {
+    margin-right: 0;
+}
+
+.links li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Main Section Styles */
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #1F2937;
+    height: 450px;
+}
+
+.text-section {
+    flex: 1;
+    padding-right: 20px;
+    margin-left: 200px;
+    color: white;
+}
+
+.headline {
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.subheadline {
+    font-size: 18px;
+    color: white;
+    padding-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 35px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.image-section {
+    flex: 1;
+    padding-left: 20px;
+    margin-right: 200px;
+}
+
+.hero-image {
+    max-width: 100%;
+}
+
+/* Feature Section Styles */
+.feature-container {
+   background-color: white;
+   padding-left: 200px;
+   padding-right: 200px;
+   height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-container h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 25px;
+}
+
+.feature-box {
+    flex-basis: 23%; /* Adjust according to your design */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feature-box img {
+    max-width: 100%;
+}
+
+/* Testimonial Section Styles */
+
+.testimonial-section-container {
+    height: 430px;
+    background-color: #E5E7EB;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial-section {
+    text-align: left;
+}
+
+.testimonial {
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 36px;
+}
+
+.author {
+    font-style: italic;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+
+
+
+.call-to-action {
+    background-color: white;
+    height: 350px; /* Set the height to 350px */
+    display: flex;
+    justify-content: center; /* Align content horizontally in the center */
+    align-items: center; /* Align content vertically in the center */
+}
+
+.call-to-action-container {
+    margin: 0 auto;
+    background-color: #007bff; /* Blue background */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.left-section {
+    flex: 1;
+    text-align: left;
+}
+
+.right-section {
+    flex: 1;
+    text-align: right;
+}
+
+.left-section h2 {
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    color: #CFDAEC;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    color: #007bff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
